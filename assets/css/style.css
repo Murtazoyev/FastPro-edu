@@ -469,6 +469,7 @@ section {
 }
 
 .contact .php-email-form input,
+.contact .php-email-form select,
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
@@ -476,6 +477,10 @@ section {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
+}
+
+.contact .php-email-form select{
+  padding: 10px 0 10px 15px;
 }
 
 .contact .php-email-form input::-moz-placeholder,

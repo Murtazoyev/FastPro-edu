@@ -76,3 +76,20 @@
   setInterval(countDownDate, 1000);
 
 })()
+
+let name = document.getElementById('')
+let button = document.getElementById('sendTelegram')
+
+
+
+
+let a = ()=> axios.post('https://api.telegram.org/bot5626053499:AAF5nY9wWWTUoUmmLoeflMvCtUvlaayI7vU/sendmessage?chat_id=950348637&text=test', 'sd')
+
+button.addEventListener('click', ()=>{
+  a()
+})
+
+
+// -1001642583555
+
+// https://api.telegram.org/bot5626053499:AAF5nY9wWWTUoUmmLoeflMvCtUvlaayI7vU/sendmessage?chat_id=950348637&text=test
