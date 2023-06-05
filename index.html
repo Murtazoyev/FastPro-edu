@@ -50,7 +50,7 @@
         </h2>
         <div
           class="countdown d-flex justify-content-center"
-          data-count="2023/03/15"
+          data-count="2023/06/19"
         >
           <div>
             <h3>%d</h3>
@@ -184,7 +184,7 @@
 
           <div class="row justify-content-center">
             <div class="col-lg-10">
-              <form action="" class="php-email-form">
+              <form action="" class="php-email-form" id="form" onchange="changeForm(event)" onsubmit="submitForm(event)">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input
@@ -208,12 +208,11 @@
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <select name="" id="" class="form-control">
-                    <option value="">English</option>
-                    <option value="">English</option>
-                    <option value="">English</option>
-                    <option value="">English</option>
-                    <option value="">English</option>
+                  <select name="" id="courses" class="form-control" required>
+                    <option selected value="Foundation">Foundation</option>
+                    <option selected value="English">English</option>
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
                   </select>
                 </div>
                 <div class="form-group mt-3">
@@ -232,10 +231,10 @@
                     Your message has been sent. Thank you!
                   </div>
                 </div>
+                <div class="text-center">
+                  <input type="submit" id="sendTelegram" value="Send Message">
+                </div>
               </form>
-              <div class="text-center">
-                <button id="sendTelegram">Send Message</button>
-              </div>
             </div>
           </div>
         </div>
